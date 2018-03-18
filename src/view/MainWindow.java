@@ -21,7 +21,7 @@ public class MainWindow extends JFrame implements ActionListener{
 	public MainWindow() {
 		// TODO Auto-generated constructor stub
 		this.setTitle("RPG");
-		this.setSize(1280,960);
+		this.setSize(1000,600);
 		this.setLocationRelativeTo(null);
 		this.setResizable(false);
 			JPanel menu = new JPanel();
@@ -40,12 +40,12 @@ public class MainWindow extends JFrame implements ActionListener{
 			titleLabel.setOpaque(false);
 			newGameButon.add(newGame);
 			leaveButon.add(leave);
-				Font titleFont = new Font(Font.MONOSPACED,Font.BOLD,150);
+				Font titleFont = new Font(Font.MONOSPACED,Font.BOLD,100);
 				title.setForeground(new Color(255,255,255));
 				title.setFont(titleFont);
 				titleLabel.add(title);
 				boutonMenu.add(titleLabel);
-			boutonMenu.add(Box.createVerticalStrut(550));
+			boutonMenu.add(Box.createVerticalStrut(300));
 			boutonMenu.add(newGameButon);
 			boutonMenu.add(Box.createVerticalStrut(30));
 			boutonMenu.add(leaveButon);
